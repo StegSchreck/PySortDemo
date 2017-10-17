@@ -123,6 +123,7 @@ def main():
             'combsort'            : CombSort(),
             'inplacemergesort'    : InplaceMergeSort(),
             'jsort'               : JSort(),
+            'circlesort'          : CircleSort(),
     }
     parser = OptionParser()
     parser.add_option('-a', '--algorithm', type='choice',
@@ -175,6 +176,7 @@ def main():
         print "comparison:"
         print disp.citems.swaps, "swaps"
         print disp.ccmp.comparisons, "comparisons"
+
 
 if __name__ == "__main__":
     main()
